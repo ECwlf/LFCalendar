@@ -1,24 +1,24 @@
 //
-//  DAPunchAwardCalendarView.m
+//  LFCalendarView.m
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/7/2.
 //  Copyright © 2019 linfeng wang. All rights reserved.
 //
 
-#import "DAPunchAwardCalendarView.h"
-#import "DAPunchAwardCalendarHeaderView.h"
-#import "DAPunchAwardCalendarCollectionView.h"
-#import "DAPunchAwardCollectionViewPageLayout.h"
-#import "NSDate+DAPunchAwardCalendar.h"
+#import "LFCalendarView.h"
+#import "LFCalendarHeaderView.h"
+#import "LFCalendarCollectionView.h"
+#import "LFCollectionViewPageLayout.h"
+#import "NSDate+LFCalendar.h"
 
 static CGFloat CalendarHeaderViewHeight = 70;
 static CGFloat CalendarCollectionViewHeight = 225;
 
-@interface DAPunchAwardCalendarView ()
+@interface LFCalendarView ()
 
-@property (nonatomic, strong) DAPunchAwardCalendarHeaderView *calendarHeaderView;
-@property (nonatomic, strong) DAPunchAwardCalendarCollectionView *calendarCollectionView;
+@property (nonatomic, strong) LFCalendarHeaderView *calendarHeaderView;
+@property (nonatomic, strong) LFCalendarCollectionView *calendarCollectionView;
 
 /**
  当前显示页面的月份
@@ -27,7 +27,7 @@ static CGFloat CalendarCollectionViewHeight = 225;
 
 @end
 
-@implementation DAPunchAwardCalendarView
+@implementation LFCalendarView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -46,22 +46,22 @@ static CGFloat CalendarCollectionViewHeight = 225;
 }
 
 #pragma mark -- setter and getter
-- (DAPunchAwardCalendarHeaderView *)calendarHeaderView {
+- (LFCalendarHeaderView *)calendarHeaderView {
     if (!_calendarHeaderView) {
-        _calendarHeaderView = [[DAPunchAwardCalendarHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, CalendarHeaderViewHeight)];
+        _calendarHeaderView = [[LFCalendarHeaderView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, CalendarHeaderViewHeight)];
     }
     return _calendarHeaderView;
 }
 
 - (UICollectionView *)calendarCollectionView {
     if (!_calendarCollectionView) {
-        __weak DAPunchAwardCalendarView *weakSelf = self;
-        DAPunchAwardCollectionViewPageLayout *pageLayout = [[DAPunchAwardCollectionViewPageLayout alloc] init];
+        __weak LFCalendarView *weakSelf = self;
+        LFCollectionViewPageLayout *pageLayout = [[LFCollectionViewPageLayout alloc] init];
         pageLayout.pages = 13;
         pageLayout.lines = 6;
         pageLayout.lineInteritems = 7;
         pageLayout.itemSize = CGSizeMake((self.frame.size.width - 12)/7, 34);
-        _calendarCollectionView = [[DAPunchAwardCalendarCollectionView alloc] initWithFrame:CGRectMake(0, CalendarHeaderViewHeight, self.frame.size.width, CalendarCollectionViewHeight) collectionViewLayout:pageLayout];
+        _calendarCollectionView = [[LFCalendarCollectionView alloc] initWithFrame:CGRectMake(0, CalendarHeaderViewHeight, self.frame.size.width, CalendarCollectionViewHeight) collectionViewLayout:pageLayout];
         _calendarCollectionView.contentInset = UIEdgeInsetsMake(0, 6, 21, 6);
         _calendarCollectionView.contentOffset = CGPointMake(_calendarCollectionView.frame.size.width * 6, 0);
         _calendarCollectionView.calendarCurrentShowDateBlock = ^(NSDate * _Nonnull date) {

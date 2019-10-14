@@ -1,5 +1,5 @@
 //
-//  DAPunchAwardCalendarCollectionViewCell.h
+//  LFCalendarCollectionViewCell.h
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/7/1.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DAPunchAwardCalendarCollectionViewCell : UICollectionViewCell
+@interface LFCalendarCollectionViewCell : UICollectionViewCell
 
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *todayBgView;
 @property (weak, nonatomic) IBOutlet UILabel *dateLab;

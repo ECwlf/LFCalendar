@@ -1,5 +1,5 @@
 //
-//  DAPunchAwardCalendarHeaderView.h
+//  LFCalendarHeaderView.h
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/7/2.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DAPunchAwardCalendarHeaderView : UIView
+@interface LFCalendarHeaderView : UIView
 
 - (void)setCurrentShowDate:(NSDate *)date;
 

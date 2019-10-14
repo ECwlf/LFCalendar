@@ -1,26 +1,26 @@
 //
-//  DAPunchAwardCalendarHeaderView.m
+//  LFCalendarHeaderView.m
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/7/2.
 //  Copyright © 2019 linfeng wang. All rights reserved.
 //
 
-#import "DAPunchAwardCalendarHeaderView.h"
+#import "LFCalendarHeaderView.h"
 
 #define YearAndMonthLabHeight 16
 #define WeeksViewHeight 15
 
 #define WeekLabWidth (self.frame.size.width - 12)/7
 
-@interface DAPunchAwardCalendarHeaderView ()
+@interface LFCalendarHeaderView ()
 
 @property (nonatomic, strong) UILabel *yearAndMonthLab;
 @property (nonatomic, strong) UIView *weeksView;
 
 @end
 
-@implementation DAPunchAwardCalendarHeaderView {
+@implementation LFCalendarHeaderView {
     NSArray *_weeksNameArr;
 }
 

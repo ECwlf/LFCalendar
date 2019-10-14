@@ -1,14 +1,14 @@
 //
-//  NSDate+DAPunchAwardCalendar.m
+//  NSDate+LFCalendar.m
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/7/1.
 //  Copyright © 2019 linfeng wang. All rights reserved.
 //
 
-#import "NSDate+DAPunchAwardCalendar.h"
+#import "NSDate+LFCalendar.h"
 
-@implementation NSDate (DAPunchAwardCalendar)
+@implementation NSDate (LFCalendar)
 
 - (NSInteger)dateDay {
     NSCalendar *calendar = [NSCalendar currentCalendar];

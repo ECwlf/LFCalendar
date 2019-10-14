@@ -1,5 +1,5 @@
 //
-//  NSDate+DAPunchAwardCalendar.h
+//  NSDate+LFCalendar.h
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/7/1.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSDate (DAPunchAwardCalendar)
+@interface NSDate (LFCalendar)
 
 /**
  *  获得当前 NSDate 对象对应的日子

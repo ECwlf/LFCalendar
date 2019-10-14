@@ -1,21 +1,21 @@
 //
-//  DAPunchAwardCollectionViewPageLayout.m
+//  LFCollectionViewPageLayout.m
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/6/28.
 //  Copyright © 2019 linfeng wang. All rights reserved.
 //
 
-#import "DAPunchAwardCollectionViewPageLayout.h"
+#import "LFCollectionViewPageLayout.h"
 
-@interface DAPunchAwardCollectionViewPageLayout ()
+@interface LFCollectionViewPageLayout ()
 
 @property (nonatomic, strong) NSMutableArray *attributs;
 @property (nonatomic, strong) NSMutableArray *sectionPages;
 
 @end
 
-@implementation DAPunchAwardCollectionViewPageLayout
+@implementation LFCollectionViewPageLayout
 
 - (instancetype)init
 {

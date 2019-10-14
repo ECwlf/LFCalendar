@@ -1,5 +1,5 @@
 //
-//  DAPunchAwardCollectionViewPageLayout.h
+//  LFCollectionViewPageLayout.h
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/6/28.
@@ -19,7 +19,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DAPunchAwardCollectionViewPageLayout : UICollectionViewFlowLayout
+@interface LFCollectionViewPageLayout : UICollectionViewFlowLayout
 
 /**
  页数

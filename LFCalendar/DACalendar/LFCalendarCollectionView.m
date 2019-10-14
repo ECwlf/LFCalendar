@@ -1,21 +1,21 @@
 //
-//  DAPunchAwardCalendarCollectionView.m
+//  LFCalendarCollectionView.m
 //  DAalendar
 //
 //  Created by linfeng wang on 2019/7/1.
 //  Copyright © 2019 linfeng wang. All rights reserved.
 //
 
-#import "DAPunchAwardCalendarCollectionView.h"
-#import "DAPunchAwardCollectionViewPageLayout.h"
-#import "DAPunchAwardCalendarCollectionViewCell.h"
-#import "NSDate+DAPunchAwardCalendar.h"
-#import "DAPunchAwardCalendarHeaderView.h"
+#import "LFCalendarCollectionView.h"
+#import "LFCollectionViewPageLayout.h"
+#import "LFCalendarCollectionViewCell.h"
+#import "NSDate+LFCalendar.h"
+#import "LFCalendarHeaderView.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
-@interface DAPunchAwardCalendarCollectionView ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface LFCalendarCollectionView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView *calendarCollectionView;
 /**
@@ -34,7 +34,7 @@
 
 @end
 
-@implementation DAPunchAwardCalendarCollectionView {
+@implementation LFCalendarCollectionView {
     CGPoint _lastContentOffset;
 }
 
@@ -44,8 +44,8 @@
         self.showsHorizontalScrollIndicator = NO;
         self.backgroundColor = [UIColor whiteColor];
         self.scrollsToTop = NO;
-        [self registerNib:[UINib nibWithNibName:@"DAPunchAwardCalendarCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"DAPunchAwardCalendarCollectionViewCell"];
-        [self registerClass:[DAPunchAwardCalendarHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DAPunchAwardCalendarHeaderView"];
+        [self registerNib:[UINib nibWithNibName:@"LFCalendarCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"LFCalendarCollectionViewCell"];
+        [self registerClass:[LFCalendarHeaderView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"LFCalendarHeaderView"];
         self.dataSource = self;
         self.delegate = self;
         self.pagingEnabled = YES;
@@ -60,7 +60,7 @@
 #pragma mark -- delegate and datasource
 - (UICollectionReusableView *) collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"DAPunchAwardCalendarHeaderView" forIndexPath:indexPath];
+    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"LFCalendarHeaderView" forIndexPath:indexPath];
     headerView.backgroundColor = [UIColor redColor];
     return headerView;
 }
@@ -70,7 +70,7 @@
 }
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    DAPunchAwardCalendarCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DAPunchAwardCalendarCollectionViewCell" forIndexPath:indexPath];
+    LFCalendarCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LFCalendarCollectionViewCell" forIndexPath:indexPath];
     cell.dateLab.textColor = [UIColor colorWithRed:51/255.0 green:51/255.0 blue:51/255.0 alpha:1.0];
     NSInteger offsetNum = indexPath.row/(42) - 6;
     NSDate *date = [_currentDate offsetMonthDate:offsetNum];
@@ -97,7 +97,7 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    DAPunchAwardCalendarCollectionViewCell *cell = (DAPunchAwardCalendarCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    LFCalendarCollectionViewCell *cell = (LFCalendarCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:_currentIndexDate];
     NSString *dayStr = cell.dateLab.text;

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "DACalendar/DAPunchAwardCalendarView.h"
+#import "DACalendar/LFCalendarView.h"
 
 static CGFloat DefaultCalendarViewHeight = 295;
 //static CGFloat DefaultCalendarViewHeaderHeight = 70;
@@ -15,7 +15,7 @@ static CGFloat DefaultCalendarViewHeight = 295;
 
 @interface ViewController ()
 
-@property (nonatomic, strong) DAPunchAwardCalendarView *calendarView;
+@property (nonatomic, strong) LFCalendarView *calendarView;
 
 @end
 
@@ -33,9 +33,9 @@ static CGFloat DefaultCalendarViewHeight = 295;
 
 #pragma mark -- setter and getter
 
-- (DAPunchAwardCalendarView *)calendarView {
+- (LFCalendarView *)calendarView {
     if (!_calendarView) {
-        _calendarView = [[DAPunchAwardCalendarView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, DefaultCalendarViewHeight)];
+        _calendarView = [[LFCalendarView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, DefaultCalendarViewHeight)];
     }
     return _calendarView;
 }
