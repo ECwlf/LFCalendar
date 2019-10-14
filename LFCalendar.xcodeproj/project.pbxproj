@@ -13,6 +13,13 @@
 		6EBC799C22F13D5C00D992BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBC799B22F13D5C00D992BE /* Assets.xcassets */; };
 		6EBC799F22F13D5C00D992BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBC799D22F13D5C00D992BE /* LaunchScreen.storyboard */; };
 		6EBC79A222F13D5C00D992BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBC79A122F13D5C00D992BE /* main.m */; };
+		6EF17F6D23545EC50021CDAC /* DAPunchAwardCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF17F6023545EC50021CDAC /* DAPunchAwardCalendarHeaderView.m */; };
+		6EF17F6E23545EC50021CDAC /* NSDate+DAPunchAwardCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF17F6123545EC50021CDAC /* NSDate+DAPunchAwardCalendar.m */; };
+		6EF17F6F23545EC50021CDAC /* DAPunchAwardCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF17F6323545EC50021CDAC /* DAPunchAwardCalendarView.m */; };
+		6EF17F7023545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF17F6423545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.m */; };
+		6EF17F7123545EC50021CDAC /* DAPunchAwardCollectionViewPageLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF17F6523545EC50021CDAC /* DAPunchAwardCollectionViewPageLayout.m */; };
+		6EF17F7223545EC50021CDAC /* DAPunchAwardCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF17F6823545EC50021CDAC /* DAPunchAwardCalendarCollectionView.m */; };
+		6EF17F7323545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF17F6C23545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,19 @@
 		6EBC799E22F13D5C00D992BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EBC79A022F13D5C00D992BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EBC79A122F13D5C00D992BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EF17F6023545EC50021CDAC /* DAPunchAwardCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPunchAwardCalendarHeaderView.m; sourceTree = "<group>"; };
+		6EF17F6123545EC50021CDAC /* NSDate+DAPunchAwardCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DAPunchAwardCalendar.m"; sourceTree = "<group>"; };
+		6EF17F6223545EC50021CDAC /* DAPunchAwardCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPunchAwardCalendarCollectionView.h; sourceTree = "<group>"; };
+		6EF17F6323545EC50021CDAC /* DAPunchAwardCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPunchAwardCalendarView.m; sourceTree = "<group>"; };
+		6EF17F6423545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPunchAwardCalendarCollectionViewCell.m; sourceTree = "<group>"; };
+		6EF17F6523545EC50021CDAC /* DAPunchAwardCollectionViewPageLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPunchAwardCollectionViewPageLayout.m; sourceTree = "<group>"; };
+		6EF17F6623545EC50021CDAC /* DAPunchAwardCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPunchAwardCalendarHeaderView.h; sourceTree = "<group>"; };
+		6EF17F6723545EC50021CDAC /* DAPunchAwardCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPunchAwardCalendarView.h; sourceTree = "<group>"; };
+		6EF17F6823545EC50021CDAC /* DAPunchAwardCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAPunchAwardCalendarCollectionView.m; sourceTree = "<group>"; };
+		6EF17F6923545EC50021CDAC /* NSDate+DAPunchAwardCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DAPunchAwardCalendar.h"; sourceTree = "<group>"; };
+		6EF17F6A23545EC50021CDAC /* DAPunchAwardCollectionViewPageLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPunchAwardCollectionViewPageLayout.h; sourceTree = "<group>"; };
+		6EF17F6B23545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAPunchAwardCalendarCollectionViewCell.h; sourceTree = "<group>"; };
+		6EF17F6C23545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DAPunchAwardCalendarCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 		6EBC799122F13D5A00D992BE /* LFCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				6EF17F5F23545EC50021CDAC /* DACalendar */,
 				6EBC799222F13D5A00D992BE /* AppDelegate.h */,
 				6EBC799322F13D5A00D992BE /* AppDelegate.m */,
 				6EBC799522F13D5A00D992BE /* ViewController.h */,
@@ -69,6 +90,26 @@
 				6EBC79A122F13D5C00D992BE /* main.m */,
 			);
 			path = LFCalendar;
+			sourceTree = "<group>";
+		};
+		6EF17F5F23545EC50021CDAC /* DACalendar */ = {
+			isa = PBXGroup;
+			children = (
+				6EF17F6723545EC50021CDAC /* DAPunchAwardCalendarView.h */,
+				6EF17F6323545EC50021CDAC /* DAPunchAwardCalendarView.m */,
+				6EF17F6623545EC50021CDAC /* DAPunchAwardCalendarHeaderView.h */,
+				6EF17F6023545EC50021CDAC /* DAPunchAwardCalendarHeaderView.m */,
+				6EF17F6223545EC50021CDAC /* DAPunchAwardCalendarCollectionView.h */,
+				6EF17F6823545EC50021CDAC /* DAPunchAwardCalendarCollectionView.m */,
+				6EF17F6A23545EC50021CDAC /* DAPunchAwardCollectionViewPageLayout.h */,
+				6EF17F6523545EC50021CDAC /* DAPunchAwardCollectionViewPageLayout.m */,
+				6EF17F6B23545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.h */,
+				6EF17F6423545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.m */,
+				6EF17F6C23545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.xib */,
+				6EF17F6923545EC50021CDAC /* NSDate+DAPunchAwardCalendar.h */,
+				6EF17F6123545EC50021CDAC /* NSDate+DAPunchAwardCalendar.m */,
+			);
+			path = DACalendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +171,7 @@
 			files = (
 				6EBC799F22F13D5C00D992BE /* LaunchScreen.storyboard in Resources */,
 				6EBC799C22F13D5C00D992BE /* Assets.xcassets in Resources */,
+				6EF17F7323545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.xib in Resources */,
 				6EBC799A22F13D5A00D992BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +184,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EBC799722F13D5A00D992BE /* ViewController.m in Sources */,
+				6EF17F6E23545EC50021CDAC /* NSDate+DAPunchAwardCalendar.m in Sources */,
+				6EF17F6F23545EC50021CDAC /* DAPunchAwardCalendarView.m in Sources */,
 				6EBC79A222F13D5C00D992BE /* main.m in Sources */,
+				6EF17F6D23545EC50021CDAC /* DAPunchAwardCalendarHeaderView.m in Sources */,
+				6EF17F7123545EC50021CDAC /* DAPunchAwardCollectionViewPageLayout.m in Sources */,
+				6EF17F7223545EC50021CDAC /* DAPunchAwardCalendarCollectionView.m in Sources */,
+				6EF17F7023545EC50021CDAC /* DAPunchAwardCalendarCollectionViewCell.m in Sources */,
 				6EBC799422F13D5A00D992BE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 883RSPQJ96;
 				INFOPLIST_FILE = LFCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 883RSPQJ96;
 				INFOPLIST_FILE = LFCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
